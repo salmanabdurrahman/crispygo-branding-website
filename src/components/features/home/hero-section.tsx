@@ -68,6 +68,7 @@ export default function HeroSection() {
                 alt="CrispyGo Ayam Crispy"
                 fill
                 className="object-cover"
+                unoptimized={true}
               />
               <div className="from-crispy-brown/20 absolute inset-0 bg-gradient-to-t to-transparent" />
             </div>

@@ -47,6 +47,7 @@ export default function ProcessSection() {
                   width={300}
                   height={128}
                   className="h-full w-full object-cover"
+                  unoptimized={true}
                 />
               </div>
               <h3 className="text-crispy-brown mb-3 text-xl font-bold">{process.title}</h3>

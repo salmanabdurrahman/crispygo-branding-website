@@ -36,7 +36,13 @@ export default function MenuSection() {
                   <Badge className="bg-crispy-bright absolute top-4 right-4 z-10 text-white">Populer</Badge>
                 )}
                 <div className="relative h-48">
-                  <Image src={menu.image || "/placeholder.svg"} alt={menu.name} fill className="object-cover" />
+                  <Image
+                    src={menu.image || "/placeholder.svg"}
+                    alt={menu.name}
+                    fill
+                    className="object-cover"
+                    unoptimized={true}
+                  />
                 </div>
                 <CardHeader>
                   <div className="flex items-start justify-between">

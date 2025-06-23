@@ -59,6 +59,7 @@ export default function EventsSection() {
                     width={200}
                     height={150}
                     className="h-full w-full object-cover"
+                    unoptimized={true}
                   />
                 </div>
                 <div className="h-48 overflow-hidden rounded-2xl">
@@ -68,6 +69,7 @@ export default function EventsSection() {
                     width={200}
                     height={200}
                     className="h-full w-full object-cover"
+                    unoptimized={true}
                   />
                 </div>
               </div>
@@ -79,6 +81,7 @@ export default function EventsSection() {
                     width={200}
                     height={200}
                     className="h-full w-full object-cover"
+                    unoptimized={true}
                   />
                 </div>
                 <div className="h-32 overflow-hidden rounded-2xl">
@@ -88,6 +91,7 @@ export default function EventsSection() {
                     width={200}
                     height={150}
                     className="h-full w-full object-cover"
+                    unoptimized={true}
                   />
                 </div>
               </div>
