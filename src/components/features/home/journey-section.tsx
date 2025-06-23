@@ -23,7 +23,7 @@ export default function JourneySection() {
           </h2>
         </motion.div>
         <div className="mx-auto max-w-4xl">
-          <div className="space-y-12">
+          <div className="timeline-line relative space-y-12">
             {milestones.map((milestone, index) => (
               <motion.div
                 key={index}

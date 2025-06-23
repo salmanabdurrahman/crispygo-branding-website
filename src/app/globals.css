@@ -177,6 +177,17 @@
   .container-custom {
     @apply container mx-auto px-4 md:px-6 lg:px-8;
   }
+
+  .timeline-line::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 4px;
+    background-color: hsl(var(--crispy-bright));
+  }
 }
 
 @layer utilities {

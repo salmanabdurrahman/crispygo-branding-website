@@ -63,7 +63,12 @@ export default function HeroSection() {
             transition={{ duration: 0.8, ease: "easeOut" }}
           >
             <div className="animate-pulse-glow relative h-[500px] w-full overflow-hidden rounded-3xl">
-              <Image src="/images/hero-crispy-chicken.jpg" alt="CrispyGo Ayam Crispy" fill className="object-cover" />
+              <Image
+                src="https://images.unsplash.com/photo-1626645738196-c2a7c87a8f58?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80"
+                alt="CrispyGo Ayam Crispy"
+                fill
+                className="object-cover"
+              />
               <div className="from-crispy-brown/20 absolute inset-0 bg-gradient-to-t to-transparent" />
             </div>
             {/* Floating Cards */}
