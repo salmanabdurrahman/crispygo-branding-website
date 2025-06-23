@@ -2,6 +2,7 @@ import Link from "next/link";
 import { motion } from "framer-motion";
 import { ChefHat } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import { navigations } from "@/constants/data";
 
 export default function Navbar() {
   return (
@@ -20,18 +21,15 @@ export default function Navbar() {
             <span className="gradient-text text-xl font-bold">CrispyGo</span>
           </motion.div>
           <div className="hidden items-center space-x-8 md:flex">
-            <Link href="#about" className="text-crispy-brown hover:text-crispy-orange transition-colors">
-              Tentang
-            </Link>
-            <Link href="#menu" className="text-crispy-brown hover:text-crispy-orange transition-colors">
-              Menu
-            </Link>
-            <Link href="#process" className="text-crispy-brown hover:text-crispy-orange transition-colors">
-              Proses
-            </Link>
-            <Link href="#contact" className="text-crispy-brown hover:text-crispy-orange transition-colors">
-              Kontak
-            </Link>
+            {navigations.map(navigation => (
+              <Link
+                href={navigation.href}
+                className="text-crispy-brown hover:text-crispy-orange font-medium transition-colors"
+                key={navigation.id}
+              >
+                {navigation.label}
+              </Link>
+            ))}
           </div>
           <Button className="bg-crispy-bright hover:bg-crispy-orange text-white">Pesan Sekarang</Button>
         </div>

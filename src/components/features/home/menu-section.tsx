@@ -1,6 +1,7 @@
 import Image from "next/image";
 import { motion } from "framer-motion";
 import { fadeInUp } from "@/constants/animation";
+import { menuItems } from "@/constants/data";
 import { Badge } from "@/components/ui/badge";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
@@ -22,52 +23,7 @@ export default function MenuSection() {
           </h2>
         </motion.div>
         <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
-          {[
-            {
-              name: "Ayam Crispy Original",
-              price: "Rp 25.000",
-              description: "Ayam crispy dengan bumbu rahasia yang gurih dan renyah",
-              popular: true,
-              image:
-                "https://images.unsplash.com/photo-1562967914-608f82629710?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2073&q=80",
-            },
-            {
-              name: "Tahu Crispy Pedas",
-              price: "Rp 15.000",
-              description: "Tahu crispy dengan balutan bumbu pedas yang menggigit",
-              image:
-                "https://images.unsplash.com/photo-1546833999-b9f581a1996d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80",
-            },
-            {
-              name: "Paket Combo Hemat",
-              price: "Rp 35.000",
-              description: "Ayam + Tahu crispy dengan nasi dan minuman",
-              popular: true,
-              image:
-                "https://images.unsplash.com/photo-1513639776629-7b61b0ac49cb?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2026&q=80",
-            },
-            {
-              name: "Ayam Crispy Spicy",
-              price: "Rp 28.000",
-              description: "Varian pedas dari ayam crispy original yang menantang",
-              image:
-                "https://images.unsplash.com/photo-1598515214211-89d3c73ae83b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80",
-            },
-            {
-              name: "Tahu Crispy Cheese",
-              price: "Rp 18.000",
-              description: "Tahu crispy dengan topping keju leleh yang creamy",
-              image:
-                "https://images.unsplash.com/photo-1571091718767-18b5b1457add?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2072&q=80",
-            },
-            {
-              name: "Family Pack",
-              price: "Rp 85.000",
-              description: "Paket keluarga untuk 4-5 orang dengan berbagai varian",
-              image:
-                "https://images.unsplash.com/photo-1555939594-58d7cb561ad1?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2087&q=80",
-            },
-          ].map((menu, index) => (
+          {menuItems.map((menu, index) => (
             <motion.div
               key={index}
               initial={{ opacity: 0, y: 30 }}

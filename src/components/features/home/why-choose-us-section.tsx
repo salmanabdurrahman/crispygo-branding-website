@@ -1,8 +1,8 @@
 import { motion } from "framer-motion";
-import { Heart, Shield, Sparkles, Target, ThumbsUp, Zap } from "lucide-react";
 import { fadeInUp } from "@/constants/animation";
 import { Badge } from "@/components/ui/badge";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
+import { whyChooseUs } from "@/constants/data";
 
 export default function WhyChooseUsSection() {
   return (
@@ -26,38 +26,7 @@ export default function WhyChooseUsSection() {
           </p>
         </motion.div>
         <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
-          {[
-            {
-              icon: Shield,
-              title: "100% Halal & Higienis",
-              description: "Semua produk kami dijamin halal dan dibuat dengan standar kebersihan tinggi",
-            },
-            {
-              icon: Zap,
-              title: "Proses Cepat",
-              description: "Pesanan Anda siap dalam 15 menit dengan kualitas yang tetap terjaga",
-            },
-            {
-              icon: Heart,
-              title: "Bahan Premium",
-              description: "Menggunakan ayam dan tahu pilihan dengan bumbu rahasia yang khas",
-            },
-            {
-              icon: Target,
-              title: "Rasa Konsisten",
-              description: "Setiap gigitan memberikan kelezatan yang sama, kapan pun Anda pesan",
-            },
-            {
-              icon: Sparkles,
-              title: "Inovasi Berkelanjutan",
-              description: "Terus mengembangkan menu dan cita rasa sesuai selera pelanggan",
-            },
-            {
-              icon: ThumbsUp,
-              title: "Kepuasan Terjamin",
-              description: "Garansi 100% puas atau uang kembali untuk setiap pembelian",
-            },
-          ].map((feature, index) => (
+          {whyChooseUs.map((feature, index) => (
             <motion.div
               key={index}
               initial={{ opacity: 0, y: 30 }}

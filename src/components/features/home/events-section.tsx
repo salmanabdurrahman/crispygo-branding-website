@@ -1,7 +1,8 @@
 import Image from "next/image";
 import { motion } from "framer-motion";
-import { Calendar, Users, Heart, Sparkles, ArrowRight } from "lucide-react";
+import { ArrowRight } from "lucide-react";
 import { fadeInLeft, fadeInRight } from "@/constants/animation";
+import { events } from "@/constants/data";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 
@@ -21,12 +22,7 @@ export default function EventsSection() {
               CrispyGo siap menemani berbagai acara spesial Anda dengan cita rasa yang tak terlupakan
             </p>
             <div className="space-y-4">
-              {[
-                { icon: Calendar, text: "Acara Keluarga & Gathering" },
-                { icon: Users, text: "Meeting & Corporate Event" },
-                { icon: Heart, text: "Celebration & Party" },
-                { icon: Sparkles, text: "Special Occasion" },
-              ].map((item, index) => (
+              {events.map((item, index) => (
                 <motion.div
                   key={index}
                   className="flex items-center space-x-3"

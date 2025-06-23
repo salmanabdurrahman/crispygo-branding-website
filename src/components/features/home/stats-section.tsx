@@ -1,6 +1,6 @@
 import { motion } from "framer-motion";
-import { Award, ChefHat, Clock, Users } from "lucide-react";
 import { fadeInUp, staggerContainer } from "@/constants/animation";
+import { homeStats } from "@/constants/data";
 
 export default function StatsSection() {
   return (
@@ -13,12 +13,7 @@ export default function StatsSection() {
           viewport={{ once: true }}
           variants={staggerContainer}
         >
-          {[
-            { number: "1000+", label: "Pelanggan Puas", icon: Users },
-            { number: "50+", label: "Menu Varian", icon: ChefHat },
-            { number: "5", label: "Tahun Pengalaman", icon: Award },
-            { number: "24/7", label: "Layanan Online", icon: Clock },
-          ].map((stat, index) => (
+          {homeStats.map((stat, index) => (
             <motion.div key={index} variants={fadeInUp} className="text-center text-white">
               <div className="bg-crispy-bright mx-auto mb-4 flex h-16 w-16 items-center justify-center rounded-2xl">
                 <stat.icon className="h-8 w-8" />

@@ -1,6 +1,7 @@
 import Image from "next/image";
 import { motion } from "framer-motion";
 import { fadeInUp } from "@/constants/animation";
+import { processSteps } from "@/constants/data";
 import { Badge } from "@/components/ui/badge";
 
 export default function ProcessSection() {
@@ -22,36 +23,7 @@ export default function ProcessSection() {
           </h2>
         </motion.div>
         <div className="grid gap-8 md:grid-cols-4">
-          {[
-            {
-              step: "01",
-              title: "Pemilihan Bahan",
-              description: "Ayam dan tahu segar dipilih dengan standar kualitas tinggi",
-              image:
-                "https://images.unsplash.com/photo-1506368249639-73a05d6f6488?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2074&q=80",
-            },
-            {
-              step: "02",
-              title: "Marinasi Khusus",
-              description: "Direndam dengan bumbu rahasia selama minimal 4 jam",
-              image:
-                "https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80",
-            },
-            {
-              step: "03",
-              title: "Coating Premium",
-              description: "Dibalut dengan tepung khusus untuk hasil yang extra crispy",
-              image:
-                "https://images.unsplash.com/photo-1577219491135-ce391730fb2c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2077&q=80",
-            },
-            {
-              step: "04",
-              title: "Perfect Frying",
-              description: "Digoreng dengan suhu dan waktu yang tepat untuk hasil optimal",
-              image:
-                "https://images.unsplash.com/photo-1626645738196-c2a7c87a8f58?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80",
-            },
-          ].map((process, index) => (
+          {processSteps.map((process, index) => (
             <motion.div
               key={index}
               initial={{ opacity: 0, y: 30 }}

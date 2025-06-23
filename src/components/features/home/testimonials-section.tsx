@@ -1,6 +1,7 @@
 import { motion } from "framer-motion";
 import { Star } from "lucide-react";
 import { fadeInUp } from "@/constants/animation";
+import { testimonials } from "@/constants/data";
 import { Badge } from "@/components/ui/badge";
 import { Card, CardContent, CardDescription, CardHeader } from "@/components/ui/card";
 
@@ -23,28 +24,7 @@ export default function TestimonialsSection() {
           </h2>
         </motion.div>
         <div className="grid gap-8 md:grid-cols-3">
-          {[
-            {
-              name: "Sarah Wijaya",
-              role: "Food Blogger",
-              content:
-                "CrispyGo benar-benar mengubah ekspektasi saya tentang ayam crispy. Renyahnya tahan lama dan bumbunya meresap sempurna!",
-              rating: 5,
-            },
-            {
-              name: "Ahmad Rizki",
-              role: "Pengusaha",
-              content:
-                "Sudah langganan CrispyGo untuk acara kantor. Kualitas konsisten dan pelayanan yang memuaskan. Highly recommended!",
-              rating: 5,
-            },
-            {
-              name: "Maya Sari",
-              role: "Ibu Rumah Tangga",
-              content: "Anak-anak saya sangat suka dengan tahu crispy CrispyGo. Sehat, halal, dan rasanya enak banget!",
-              rating: 5,
-            },
-          ].map((testimonial, index) => (
+          {testimonials.map((testimonial, index) => (
             <motion.div
               key={index}
               initial={{ opacity: 0, y: 30 }}

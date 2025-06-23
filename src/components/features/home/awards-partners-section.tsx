@@ -1,8 +1,9 @@
 import { motion } from "framer-motion";
 import { Card } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
-import { Star, Award, Trophy, Handshake } from "lucide-react";
+import { Handshake } from "lucide-react";
 import { fadeInLeft, fadeInRight } from "@/constants/animation";
+import { awards } from "@/constants/data";
 
 export default function AwardsPartnersSection() {
   return (
@@ -18,23 +19,7 @@ export default function AwardsPartnersSection() {
               Prestasi yang <span className="gradient-text">Membanggakan</span>
             </h3>
             <div className="space-y-6">
-              {[
-                {
-                  icon: Trophy,
-                  title: "Best Crispy Food 2023",
-                  description: "Penghargaan dari Asosiasi Kuliner Indonesia",
-                },
-                {
-                  icon: Award,
-                  title: "Top Brand Award",
-                  description: "Merek terpercaya kategori makanan crispy",
-                },
-                {
-                  icon: Star,
-                  title: "Customer Choice Award",
-                  description: "Pilihan pelanggan terbaik 3 tahun berturut-turut",
-                },
-              ].map((award, index) => (
+              {awards.map((award, index) => (
                 <motion.div
                   key={index}
                   className="flex items-start space-x-4"

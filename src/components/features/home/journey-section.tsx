@@ -1,5 +1,6 @@
 import { motion } from "framer-motion";
 import { fadeInUp } from "@/constants/animation";
+import { milestones } from "@/constants/data";
 import { Badge } from "@/components/ui/badge";
 import { Card } from "@/components/ui/card";
 
@@ -23,28 +24,7 @@ export default function JourneySection() {
         </motion.div>
         <div className="mx-auto max-w-4xl">
           <div className="space-y-12">
-            {[
-              {
-                year: "2019",
-                title: "Awal Mula",
-                description: "Dimulai dari dapur rumah dengan resep rahasia keluarga",
-              },
-              {
-                year: "2020",
-                title: "Ekspansi Pertama",
-                description: "Membuka outlet pertama dan mulai melayani delivery",
-              },
-              {
-                year: "2022",
-                title: "Inovasi Menu",
-                description: "Mengembangkan berbagai varian rasa sesuai selera lokal",
-              },
-              {
-                year: "2024",
-                title: "Digital Transformation",
-                description: "Launching platform online dan sistem pemesanan modern",
-              },
-            ].map((milestone, index) => (
+            {milestones.map((milestone, index) => (
               <motion.div
                 key={index}
                 initial={{ opacity: 0, x: index % 2 === 0 ? -50 : 50 }}

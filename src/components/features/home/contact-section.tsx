@@ -1,6 +1,7 @@
 import { motion } from "framer-motion";
-import { Mail, MapPin, MessageCircle, Phone } from "lucide-react";
+import { MessageCircle } from "lucide-react";
 import { fadeInLeft, fadeInRight, fadeInUp } from "@/constants/animation";
+import { contacts } from "@/constants/data";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
@@ -35,26 +36,7 @@ export default function ContactSection() {
             className="space-y-8"
           >
             <div className="space-y-6">
-              {[
-                {
-                  icon: Phone,
-                  title: "Telepon",
-                  content: "+62 812-3456-7890",
-                  description: "Senin - Minggu, 08:00 - 22:00",
-                },
-                {
-                  icon: Mail,
-                  title: "Email",
-                  content: "hello@crispygo.com",
-                  description: "Respon dalam 24 jam",
-                },
-                {
-                  icon: MapPin,
-                  title: "Alamat",
-                  content: "Jl. Raya Crispy No. 123",
-                  description: "Jakarta Selatan, Indonesia",
-                },
-              ].map((contact, index) => (
+              {contacts.map((contact, index) => (
                 <motion.div
                   key={index}
                   className="flex items-start space-x-4"
