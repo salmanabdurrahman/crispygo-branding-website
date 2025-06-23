@@ -39,7 +39,9 @@ export default function TestimonialsSection() {
                       <Star key={i} className="fill-crispy-bright text-crispy-bright h-4 w-4" />
                     ))}
                   </div>
-                  <CardDescription className="text-base text-white/80">"{testimonial.content}"</CardDescription>
+                  <CardDescription className="text-base text-white/80">
+                    &ldquo;{testimonial.content}&rdquo;
+                  </CardDescription>
                 </CardHeader>
                 <CardContent>
                   <div className="flex items-center space-x-3">
