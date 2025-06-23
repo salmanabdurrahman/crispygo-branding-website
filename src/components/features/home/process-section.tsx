@@ -27,25 +27,29 @@ export default function ProcessSection() {
               step: "01",
               title: "Pemilihan Bahan",
               description: "Ayam dan tahu segar dipilih dengan standar kualitas tinggi",
-              image: "/images/fresh-ingredients.jpg",
+              image:
+                "https://images.unsplash.com/photo-1506368249639-73a05d6f6488?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2074&q=80",
             },
             {
               step: "02",
               title: "Marinasi Khusus",
               description: "Direndam dengan bumbu rahasia selama minimal 4 jam",
-              image: "/images/cooking-process-1.jpg",
+              image:
+                "https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80",
             },
             {
               step: "03",
               title: "Coating Premium",
               description: "Dibalut dengan tepung khusus untuk hasil yang extra crispy",
-              image: "/images/cooking-process-2.jpg",
+              image:
+                "https://images.unsplash.com/photo-1577219491135-ce391730fb2c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2077&q=80",
             },
             {
               step: "04",
               title: "Perfect Frying",
               description: "Digoreng dengan suhu dan waktu yang tepat untuk hasil optimal",
-              image: "/images/hero-crispy-chicken.jpg",
+              image:
+                "https://images.unsplash.com/photo-1626645738196-c2a7c87a8f58?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80",
             },
           ].map((process, index) => (
             <motion.div

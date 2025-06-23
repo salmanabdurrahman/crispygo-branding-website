@@ -58,7 +58,7 @@ export default function EventsSection() {
               <div className="space-y-4">
                 <div className="h-32 overflow-hidden rounded-2xl">
                   <Image
-                    src="/images/event-catering-1.jpg"
+                    src="https://images.unsplash.com/photo-1530103862676-de8c9debad1d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80"
                     alt="Event 1"
                     width={200}
                     height={150}
@@ -67,7 +67,7 @@ export default function EventsSection() {
                 </div>
                 <div className="h-48 overflow-hidden rounded-2xl">
                   <Image
-                    src="/images/event-catering-2.jpg"
+                    src="https://images.unsplash.com/photo-1511795409834-ef04bbd61622?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2069&q=80"
                     alt="Event 2"
                     width={200}
                     height={200}
@@ -78,7 +78,7 @@ export default function EventsSection() {
               <div className="space-y-4 pt-8">
                 <div className="h-48 overflow-hidden rounded-2xl">
                   <Image
-                    src="/images/event-catering-3.jpg"
+                    src="https://images.unsplash.com/photo-1414235077428-338989a2e8c0?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80"
                     alt="Event 3"
                     width={200}
                     height={200}
@@ -87,7 +87,7 @@ export default function EventsSection() {
                 </div>
                 <div className="h-32 overflow-hidden rounded-2xl">
                   <Image
-                    src="/images/event-catering-4.jpg"
+                    src="https://images.unsplash.com/photo-1504674900247-0877df9cc836?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80"
                     alt="Event 4"
                     width={200}
                     height={150}
