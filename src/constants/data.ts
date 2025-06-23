@@ -17,6 +17,8 @@ import {
   Zap,
 } from "lucide-react";
 
+export const googleAnalytics = process.env.NEXT_PUBLIC_GOOGLE_ANALYTICS ?? "";
+
 export const navigations = [
   {
     id: 1,
