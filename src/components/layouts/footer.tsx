@@ -1,6 +1,7 @@
-import { ChefHat } from "lucide-react";
 import Link from "next/link";
 import React from "react";
+import { ChefHat } from "lucide-react";
+import { socialMediaIcons } from "@/constants/data";
 
 export default function Footer() {
   return (
@@ -16,13 +17,12 @@ export default function Footer() {
             </div>
             <p className="mb-4 text-white/70">Menghadirkan kelezatan crispy terbaik untuk setiap momen spesial Anda.</p>
             <div className="flex space-x-4">
-              {["facebook", "instagram", "twitter", "youtube"].map(social => (
-                <div
-                  key={social}
-                  className="hover:bg-crispy-bright flex h-8 w-8 cursor-pointer items-center justify-center rounded-lg bg-white/10 transition-colors"
-                >
-                  <div className="h-4 w-4 rounded bg-white/70" />
-                </div>
+              {socialMediaIcons.map((social, index) => (
+                <Link href={social.url} target="_blank" rel="noopener noreferrer" key={index}>
+                  <div className="hover:bg-crispy-bright flex h-8 w-8 cursor-pointer items-center justify-center rounded-lg bg-white/10 transition-colors">
+                    <social.icon className="h-4 w-4 text-white" />
+                  </div>
+                </Link>
               ))}
             </div>
           </div>

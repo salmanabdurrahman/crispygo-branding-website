@@ -3,7 +3,9 @@ import {
   Calendar,
   ChefHat,
   Clock,
+  Facebook,
   Heart,
+  Instagram,
   Mail,
   MapPin,
   Phone,
@@ -13,7 +15,9 @@ import {
   Target,
   ThumbsUp,
   Trophy,
+  Twitter,
   Users,
+  Youtube,
   Zap,
 } from "lucide-react";
 
@@ -282,5 +286,24 @@ export const contacts = [
     title: "Alamat",
     content: "Jl. Raya Crispy No. 123",
     description: "Jakarta Selatan, Indonesia",
+  },
+];
+
+export const socialMediaIcons = [
+  {
+    icon: Facebook,
+    url: "https://www.facebook.com",
+  },
+  {
+    icon: Instagram,
+    url: "https://www.instagram.com/crispygoofficial",
+  },
+  {
+    icon: Twitter,
+    url: "https://www.twitter.com",
+  },
+  {
+    icon: Youtube,
+    url: "https://www.youtube.com",
   },
 ];

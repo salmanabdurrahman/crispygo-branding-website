@@ -15,7 +15,7 @@ export default function StatsSection() {
         >
           {homeStats.map((stat, index) => (
             <motion.div key={index} variants={fadeInUp} className="text-center text-white">
-              <div className="bg-crispy-bright mx-auto mb-4 flex h-16 w-16 items-center justify-center rounded-2xl">
+              <div className="bg-crispy-bright hover-lift mx-auto mb-4 flex h-16 w-16 items-center justify-center rounded-2xl">
                 <stat.icon className="h-8 w-8" />
               </div>
               <div className="mb-2 text-3xl font-bold md:text-4xl">{stat.number}</div>

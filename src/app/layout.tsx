@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { GoogleTagManager } from "@next/third-parties/google";
+import { GoogleAnalytics } from "@next/third-parties/google";
 import { Plus_Jakarta_Sans } from "next/font/google";
 import { googleAnalytics } from "@/constants/data";
 import "./globals.css";
@@ -23,7 +23,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" className="scroll-smooth">
-      <GoogleTagManager gtmId={googleAnalytics} />
+      <GoogleAnalytics gaId={googleAnalytics} />
       <body className={`${plusJakarta.className} antialiased`}>{children}</body>
     </html>
   );

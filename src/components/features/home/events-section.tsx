@@ -7,6 +7,10 @@ import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 
 export default function EventsSection() {
+  const handleOrderNowClick = () => {
+    window.open("https://wa.me/628995226617", "_blank");
+  };
+
   return (
     <section className="section-padding bg-crispy-cream/30">
       <div className="container-custom">
@@ -38,7 +42,10 @@ export default function EventsSection() {
                 </motion.div>
               ))}
             </div>
-            <Button className="bg-crispy-bright hover:bg-crispy-orange mt-8 px-8 text-white">
+            <Button
+              className="bg-crispy-bright hover:bg-crispy-orange mt-8 px-8 text-white"
+              onClick={handleOrderNowClick}
+            >
               Konsultasi Catering
               <ArrowRight className="ml-2 h-4 w-4" />
             </Button>

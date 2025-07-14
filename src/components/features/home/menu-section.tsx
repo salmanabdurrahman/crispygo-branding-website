@@ -7,6 +7,10 @@ import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/com
 import { Button } from "@/components/ui/button";
 
 export default function MenuSection() {
+  const handleOrderNowClick = () => {
+    window.open("https://wa.me/628995226617", "_blank");
+  };
+
   return (
     <section id="menu" className="section-padding bg-crispy-light">
       <div className="container-custom">
@@ -52,7 +56,12 @@ export default function MenuSection() {
                 </CardHeader>
                 <CardContent>
                   <CardDescription className="text-crispy-brown/70 mb-4">{menu.description}</CardDescription>
-                  <Button className="bg-crispy-bright hover:bg-crispy-orange w-full text-white">Pesan Sekarang</Button>
+                  <Button
+                    className="bg-crispy-bright hover:bg-crispy-orange w-full text-white"
+                    onClick={handleOrderNowClick}
+                  >
+                    Pesan Sekarang
+                  </Button>
                 </CardContent>
               </Card>
             </motion.div>

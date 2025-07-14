@@ -5,6 +5,10 @@ import { Button } from "@/components/ui/button";
 import { navigations } from "@/constants/data";
 
 export default function Navbar() {
+  const handleOrderNowClick = () => {
+    window.open("https://wa.me/628995226617", "_blank");
+  };
+
   return (
     <motion.nav
       initial={{ opacity: 0, y: -20 }}
@@ -18,7 +22,9 @@ export default function Navbar() {
             <div className="bg-crispy-bright flex h-8 w-8 items-center justify-center rounded-lg">
               <ChefHat className="h-5 w-5 text-white" />
             </div>
-            <span className="gradient-text text-xl font-bold">CrispyGo</span>
+            <Link href="/">
+              <span className="gradient-text text-xl font-bold">CrispyGo</span>
+            </Link>
           </motion.div>
           <div className="hidden items-center space-x-8 md:flex">
             {navigations.map(navigation => (
@@ -31,7 +37,9 @@ export default function Navbar() {
               </Link>
             ))}
           </div>
-          <Button className="bg-crispy-bright hover:bg-crispy-orange text-white">Pesan Sekarang</Button>
+          <Button className="bg-crispy-bright hover:bg-crispy-orange text-white" onClick={handleOrderNowClick}>
+            Pesan Sekarang
+          </Button>
         </div>
       </nav>
     </motion.nav>

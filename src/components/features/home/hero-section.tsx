@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 import { motion } from "framer-motion";
 import { ArrowRight, Clock, Heart, Star } from "lucide-react";
 import { fadeInUp, staggerContainer } from "@/constants/animation";
@@ -6,6 +7,10 @@ import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 
 export default function HeroSection() {
+  const handleOrderNowClick = () => {
+    window.open("https://wa.me/628995226617", "_blank");
+  };
+
   return (
     <section className="section-padding from-crispy-light via-crispy-cream to-crispy-light bg-gradient-to-br pt-32">
       <div className="container-custom">
@@ -27,17 +32,20 @@ export default function HeroSection() {
               <Button
                 size="lg"
                 className="bg-crispy-bright hover:bg-crispy-orange hover-lift px-8 py-6 text-lg text-white"
+                onClick={handleOrderNowClick}
               >
                 Pesan Sekarang
                 <ArrowRight className="ml-2 h-5 w-5" />
               </Button>
-              <Button
-                size="lg"
-                variant="outline"
-                className="border-crispy-orange text-crispy-orange hover:bg-crispy-orange px-8 py-6 text-lg hover:text-white"
-              >
-                Lihat Menu
-              </Button>
+              <Link href="/#menu">
+                <Button
+                  size="lg"
+                  variant="outline"
+                  className="border-crispy-orange text-crispy-orange hover:bg-crispy-orange px-8 py-6 text-lg hover:text-white"
+                >
+                  Lihat Menu
+                </Button>
+              </Link>
             </motion.div>
             <motion.div variants={fadeInUp} className="flex items-center space-x-6 pt-4">
               <div className="flex items-center space-x-2">

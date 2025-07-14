@@ -46,7 +46,7 @@ export default function ProcessSection() {
                   alt={process.title}
                   width={300}
                   height={128}
-                  className="h-full w-full object-cover"
+                  className="hover-lift h-full w-full object-cover"
                   unoptimized={true}
                 />
               </div>
